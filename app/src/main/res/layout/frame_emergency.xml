@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/activity_vertical_margin">
+
+
+    <TextView
+            android:id="@+id/emergency_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="30sp"
+            android:layout_gravity="center"/>
+
+    <LinearLayout
+            android:layout_marginTop="15px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+                android:id="@+id/et_quantity"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:hint="e.g. 2"
+                android:padding="15dp"
+                android:inputType="number"
+                android:background="@drawable/et_custom"
+                android:textSize="15sp" />
+
+        <!--<TextView-->
+                <!--android:text="Quantity"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_marginLeft="20px"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/textView"-->
+                <!--android:textSize="20sp"-->
+                <!--android:layout_weight="1"/>-->
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_marginTop="15px"
+            android:layout_marginBottom="15px"
+            android:orientation="horizontal">
+
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textMultiLine"
+                android:gravity="start|top"
+                android:ems="10"
+                android:padding="15dp"
+                android:hint="Note: e.g. We need a quick respond ASAP"
+                android:background="@drawable/et_custom"
+                android:id="@+id/et_note" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        <com.google.android.gms.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <TableLayout
+            android:id="@+id/tblSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical">
+
+            <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_margin="10px"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_custom"
+                    android:textColor="@android:color/white"
+                    android:text="Cancel"/>
+            <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_custom"
+                    android:layout_margin="10px"
+                    android:textColor="@android:color/white"
+                    android:text="Confirm"/>
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
