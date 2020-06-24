@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/android_list_view_tutorial_with_example"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="7dp">
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutContactCursorView">
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <ImageView
+            android:id="@+id/listview_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ambulance_96"
+            android:padding="10dp" />
+
+    <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:orientation="vertical"
+            android:padding="7dp"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:id="@+id/listview_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/listview_item_short_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="Description"
+                android:textSize="12sp" />
+    </LinearLayout>
+    </TableRow>
+    </TableLayout>
+    <View
+            android:id="@+id/spacer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>
